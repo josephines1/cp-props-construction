@@ -1,0 +1,273 @@
+:root {
+  --primary: #003366;
+  --primary-light: #baddff;
+  --secondary: #606060;
+  --accent-light: #f5a689;
+  --accent: #ca6641;
+  --accent-darken: rgb(165, 66, 0);
+  --light: #fff;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary);
+  animation: fadeDown 0.5s ease-in-out forwards;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("../../assets/icon/down.png");
+  width: 1em;
+  height: 1em;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("../../assets/icon/down.png");
+  width: 1em;
+  height: 1em;
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+li.nav-item a.nav-link {
+  color: var(--light);
+}
+
+li.nav-item a.nav-link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 5px;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+li.nav-item:hover a.nav-link {
+  color: var(--accent);
+}
+
+li.nav-item:hover a.nav-link::after {
+  transform: scaleX(0.7);
+}
+
+/* Home */
+#home h1 {
+  color: var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--light);
+  border: none;
+  padding: 0.8em 0.5em;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-darken);
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.8em 0.5em;
+}
+
+.btn-outline-primary:hover {
+  color: var(--light);
+  background-color: var(--accent-darken);
+  border: 1px solid var(--accent-darken);
+}
+
+/* About */
+.about-container .row:nth-child(1) {
+  background: #003366;
+  background: url("../../assets/img/about-img.jpg"),
+    linear-gradient(var(--primary-light), var(--primary));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+  color: var(--light);
+  padding-block: 3em;
+  box-shadow: 5px 5px 10px 2px var(--accent-light);
+  text-shadow: 0px 0px 0px 10px #000;
+}
+
+.about-container .row:nth-child(2) h2 {
+  color: var(--primary);
+}
+
+.about-container .row:nth-child(2) span {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 576px) {
+  .about-container {
+    padding-inline: 3em;
+  }
+}
+
+/* Services */
+#services h1 {
+  color: var(--primary);
+}
+
+.service-box {
+  border: 1px solid var(--primary);
+  padding: 3em 1.5em;
+  border-radius: 1em;
+}
+
+.service-box i {
+  font-size: 1.5em;
+  color: var(--accent);
+}
+
+#projects h1 {
+  color: var(--primary);
+}
+
+.project-image {
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.project-date {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+#faq h1 {
+  color: var(--primary);
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.accordion-button::after {
+  transition: 0.3s;
+  background-color: var(--light);
+  color: var(--primary);
+  border-radius: 100%;
+}
+
+footer {
+  background-color: var(--primary);
+}
+
+a .footer-company-name {
+  font-size: 1.5em;
+}
+
+a.footer-nav-item {
+  color: var(--light);
+  width: fit-content;
+}
+
+a.footer-nav-item:hover {
+  color: var(--accent);
+}
+
+p.footer-contact {
+  cursor: pointer;
+  width: fit-content;
+}
+
+p.footer-contact a {
+  color: var(--light);
+}
+
+p.footer-contact:hover i,
+p.footer-contact:hover a {
+  color: var(--accent);
+}
+
+a.footer-author {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+a.footer-author:hover {
+  color: var(--accent-darken);
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in-up.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left,
+.fade-in-right {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-left.active {
+  opacity: 1;
+  animation: fadeInLeft 0.5s ease-in-out forwards;
+}
+
+.fade-in-right.active {
+  opacity: 1;
+  animation: fadeInRight 0.5s ease-in-out forwards;
+}

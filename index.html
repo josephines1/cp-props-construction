@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Props Construction</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/icon/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="assets/icon/favicon-white.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          <span class="fw-bold text-white">Props Construction</span>
+        </a>
+        <button
+          class="navbar-toggler bg-white shadow-none collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home">
+      <div class="container col-xxl-8 px-4 py-3">
+        <div
+          class="row flex-row-reverse flex-md-row align-items-center justify-content-center justify-content-md-between g-5 py-5"
+        >
+          <div class="col-md-6 text-center text-md-start fade-in-left">
+            <h1 class="fw-bold mb-3">
+              Membangun Masa Depan, <br />Satu Proyek pada Satu Waktu
+            </h1>
+            <p class="lead">
+              Kami adalah perusahaan konstruksi terkemuka yang berdedikasi untuk
+              memberikan kualitas terbaik dalam setiap proyek yang kami tangani.
+            </p>
+            <div class="d-flex justify-content-md-start justify-content-center">
+              <a href="#about" class="btn btn-primary px-4 me-2">
+                Tentang Kami
+              </a>
+              <a href="#projects" class="btn btn-outline-primary px-4">
+                Proyek Kami
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-sm-8 col-md-6 fade-in-right">
+            <img
+              src="assets/img/hero-img.jpg"
+              class="d-block mx-md-auto img-fluid"
+              alt="Hero Image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 fade-in-up">
+      <div class="container about-container">
+        <div class="row px-4">
+          <div class="col-12 col-md-10 mx-auto text-center">
+            <h1 class="fw-bold mb-3 fade-in-up">Tentang Kami</h1>
+            <p class="lh-lg fade-in-up">
+              Kami adalah sebuah perusahaan konstruksi yang berkomitmen untuk
+              memberikan solusi konstruksi berkualitas tinggi bagi berbagai
+              jenis proyek. Dengan pengalaman lebih dari 25 tahun di industri
+              ini, kami telah membangun reputasi sebagai pemimpin dalam inovasi,
+              keandalan, dan keunggulan dalam setiap aspek pekerjaan konstruksi.
+            </p>
+          </div>
+        </div>
+
+        <div class="row px-md-4 px-0 mt-5 row-gap-4">
+          <div class="col col-md-6 col-12">
+            <h2>Visi & Misi</h2>
+            <p class="lh-lg">
+              Visi kami adalah menjadi mitra pilihan utama dalam membangun masa
+              depan yang berkelanjutan melalui solusi konstruksi yang terbaik.
+            </p>
+            <p>Misi kami adalah:</p>
+            <ul>
+              <li>Memberikan Solusi Konstruksi Berkualitas Tinggi</li>
+              <li>Menjamin Ketepatan Waktu dan Keandalan</li>
+              <li>Memajukan Inovasi dan Keberlanjutan</li>
+            </ul>
+          </div>
+          <div class="col col-md-6 col-12">
+            <h2>Nilai-nilai</h2>
+            <p class="lh-lg">
+              Kami memegang teguh nilai-nilai kualitas, keandalan, inovasi, dan
+              kepuasan pelanggan dalam setiap aspek pekerjaan kami. Kami
+              berkomitmen untuk menggunakan bahan berkualitas tinggi dan
+              teknologi terkini demi hasil yang tahan lama dan memuaskan.
+              <span>Ketepatan waktu adalah prinsip utama kami</span>, yang kami
+              dukung dengan upaya terus-menerus dalam menemukan solusi inovatif
+              untuk meningkatkan efisiensi dalam setiap proyek.
+              <span>Kepuasan pelanggan adalah prioritas kami yang utama</span>,
+              di mana kami berusaha memberikan pengalaman positif dan solusi
+              yang sesuai dengan kebutuhan unik setiap klien.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container py-5 px-4">
+        <h1 class="mb-5 fw-bold text-center text-md-start fade-in-up">
+          Layanan Kami
+        </h1>
+        <div class="d-flex gap-3 flex-md-row flex-column">
+          <div class="service-box fade-in-up">
+            <i class="fa-solid fa-sign-hanging mb-3"></i>
+            <h3 class="mb-3">Konstruksi Bangunan Komersial</h3>
+            <p>
+              Menyediakan solusi konstruksi yang inovatif dan efisien untuk
+              bisnis Anda.
+            </p>
+          </div>
+          <div class="service-box fade-in-up">
+            <i class="fa-solid fa-house-chimney-window mb-3"></i>
+            <h3 class="mb-3">Konstruksi Perumahan</h3>
+            <p>
+              Membangun rumah impian Anda dengan kualitas dan ketepatan waktu.
+            </p>
+          </div>
+          <div class="service-box fade-in-up">
+            <i class="fa-solid fa-house-circle-check mb-3"></i>
+            <h3 class="mb-3">Renovasi dan Perbaikan</h3>
+            <p>
+              Memperbarui dan memperbaiki bangunan Anda dengan standar terbaik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container py-5 px-4">
+        <h1 class="mb-5 text-center fw-bold fade-in-up">Proyek Kami</h1>
+
+        <div class="row row-cols-2 justify-content-center gap-4">
+          <div class="col col-md-5 col-12 shadow p-3 rounded fade-in-left">
+            <img
+              class="project-image"
+              src="./assets/img/portfolio-img-1.jpg"
+              alt="Portfolio Image 1"
+              width="100%"
+            />
+            <h4 class="pt-4">Central Business Tower</h4>
+            <p>
+              <span class="project-date">April 2023</span> | Central Business
+              Tower adalah gedung perkantoran modern dengan 40 lantai yang
+              dirancang untuk memenuhi kebutuhan perusahaan besar. Proyek ini
+              menampilkan desain arsitektur inovatif dan fasilitas ramah
+              lingkungan yang mencakup teknologi hemat energi dan area hijau.
+            </p>
+          </div>
+          <div class="col col-md-5 col-12 shadow p-3 rounded fade-in-right">
+            <img
+              class="project-image"
+              src="./assets/img/portfolio-img-2.jpg"
+              alt="Portfolio Image 1"
+              width="100%"
+            />
+            <h4 class="pt-4">Green Park Mall</h4>
+            <p>
+              <span class="project-date">December 2021</span> | Green Park Mall
+              adalah pusat perbelanjaan ramah lingkungan yang mencakup lebih
+              dari 200 toko ritel, area hiburan, dan food court. Desainnya
+              mengutamakan penggunaan bahan-bahan berkelanjutan dan teknologi
+              pengelolaan limbah yang canggih.
+            </p>
+          </div>
+          <div class="col col-md-5 col-12 shadow p-3 rounded fade-in-left">
+            <img
+              class="project-image"
+              src="./assets/img/portfolio-img-3.jpg"
+              alt="Portfolio Image 1"
+              width="100%"
+            />
+            <h4 class="pt-4">Sunrise Residences</h4>
+            <p>
+              <span class="project-date">August 2022</span> | Sunrise Residences
+              adalah kompleks perumahan premium yang terdiri dari 120 unit rumah
+              mewah. Proyek ini dirancang dengan mempertimbangkan kenyamanan dan
+              kemewahan, menawarkan fasilitas seperti kolam renang, taman
+              bermain, dan sistem keamanan 24 jam.
+            </p>
+          </div>
+          <div class="col col-md-5 col-12 shadow p-3 rounded fade-in-right">
+            <img
+              class="project-image"
+              src="./assets/img/portfolio-img-4.jpg"
+              alt="Portfolio Image 1"
+              width="100%"
+            />
+            <h4 class="pt-4">Harborview Apartments</h4>
+            <p>
+              <span class="project-date">June 2020</span> | Harborview
+              Apartments adalah proyek apartemen mewah yang menawarkan
+              pemandangan laut yang spektakuler. Proyek ini terdiri dari 150
+              unit apartemen dengan desain interior modern dan fasilitas lengkap
+              seperti gym, spa, dan rooftop lounge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container py-5 px-4">
+        <h1 class="mb-5 text-center fw-bold fade-in-up">FAQ</h1>
+
+        <div class="accordion pt-4" id="accordionExample">
+          <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col fade-in-left">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#one"
+                    aria-expanded="false"
+                    aria-controls="one"
+                  >
+                    Apa jenis proyek konstruksi yang bisa Anda tangani?
+                  </button>
+                </h2>
+                <div
+                  id="one"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Kami menangani berbagai jenis proyek konstruksi, termasuk
+                    bangunan komersial, perumahan, industri, dan renovasi. Kami
+                    juga memiliki pengalaman dalam proyek-proyek khusus seperti
+                    pusat perbelanjaan, hotel, dan fasilitas olahraga.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in-right">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#two"
+                    aria-expanded="false"
+                    aria-controls="two"
+                  >
+                    Bagaimana proses kerja sama dengan perusahaan konstruksi
+                    Anda?
+                  </button>
+                </h2>
+                <div
+                  id="two"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Proses kerja sama dimulai dengan konsultasi awal untuk
+                    memahami kebutuhan dan visi Anda. Setelah itu, kami akan
+                    menyediakan proposal dan rencana proyek yang detail. Setelah
+                    persetujuan, kami akan memulai tahap konstruksi dengan
+                    pengawasan ketat untuk memastikan kualitas dan ketepatan
+                    waktu.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in-left">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#three"
+                    aria-expanded="false"
+                    aria-controls="three"
+                  >
+                    Apakah Anda menyediakan layanan desain dan arsitektur?
+                  </button>
+                </h2>
+                <div
+                  id="three"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Ya, kami menyediakan layanan desain dan arsitektur sebagai
+                    bagian dari paket lengkap kami. Tim desainer dan arsitek
+                    kami akan bekerja sama dengan Anda untuk menciptakan desain
+                    yang sesuai dengan kebutuhan dan anggaran Anda.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in-right">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#four"
+                    aria-expanded="false"
+                    aria-controls="four"
+                  >
+                    Bagaimana Anda memastikan kualitas dalam setiap proyek?
+                  </button>
+                </h2>
+                <div
+                  id="four"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Kami memiliki sistem pengendalian kualitas yang ketat yang
+                    mencakup inspeksi rutin dan pengawasan ketat di setiap tahap
+                    proyek. Selain itu, kami hanya bekerja dengan bahan
+                    berkualitas tinggi dan tenaga kerja profesional untuk
+                    memastikan hasil yang terbaik.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in-left">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#five"
+                    aria-expanded="false"
+                    aria-controls="five"
+                  >
+                    Berapa lama waktu yang diperlukan untuk menyelesaikan sebuah
+                    proyek?
+                  </button>
+                </h2>
+                <div
+                  id="five"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Waktu penyelesaian proyek bervariasi tergantung pada skala
+                    dan kompleksitas proyek tersebut. Setelah konsultasi dan
+                    penilaian awal, kami akan memberikan estimasi waktu yang
+                    jelas dan berusaha untuk menyelesaikan proyek sesuai dengan
+                    jadwal yang telah disepakati.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col fade-in-right">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#six"
+                    aria-expanded="false"
+                    aria-controls="six"
+                  >
+                    Apakah Anda memiliki pengalaman dalam proyek ramah
+                    lingkungan?
+                  </button>
+                </h2>
+                <div
+                  id="six"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Ya, kami memiliki pengalaman dalam mengerjakan proyek-proyek
+                    ramah lingkungan dan berkelanjutan. Kami menggunakan
+                    teknologi dan metode konstruksi yang mengurangi dampak
+                    lingkungan dan mematuhi standar hijau.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row py-5 px-4 g-3 mt-5 justify-content-between row-gap-4">
+          <div class="col col-md-4 col-12">
+            <a
+              class="text-decoration-none d-flex align-items-center gap-2"
+              href="/"
+            >
+              <img
+                src="assets/icon/favicon-white.png"
+                alt="Logo"
+                width="45"
+                height="45"
+                class="d-inline-block align-text-top"
+              />
+              <span class="fw-bold text-white footer-company-name"
+                >Props Construction</span
+              >
+            </a>
+          </div>
+          <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
+            <h4 class="fw-bold">Menu</h4>
+            <a class="text-decoration-none footer-nav-item" href="#home"
+              >Home</a
+            >
+            <a class="text-decoration-none footer-nav-item" href="#about"
+              >About</a
+            >
+            <a class="text-decoration-none footer-nav-item" href="#services"
+              >Services</a
+            >
+            <a class="text-decoration-none footer-nav-item" href="#projects"
+              >Projects</a
+            >
+            <a class="text-decoration-none footer-nav-item" href="#faq">FAQ</a>
+          </div>
+          <div class="col col-md-4 col-12 d-flex flex-column text-white gap-2">
+            <h4 class="fw-bold">Contact Us</h4>
+            <p class="d-flex gap-2 align-items-center footer-contact m-0">
+              <i class="fa-solid fa-envelope"></i>
+              <a class="text-decoration-none" href="direct-link-to-email"
+                >admin@email.propsconstruction.com
+              </a>
+            </p>
+            <p class="d-flex gap-2 align-items-center footer-contact m-0">
+              <i class="fa-solid fa-phone"></i>
+              <a class="text-decoration-none" href="direct-link-to-phone">
+                (021) - 1234 - 5678
+              </a>
+            </p>
+            <p class="d-flex gap-2 align-items-center footer-contact m-0">
+              <i class="fa-solid fa-location-dot"></i>
+              <a class="text-decoration-none" href="direct-link-to-map">
+                Jakarta Raya, Indonesia
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="copyright text-white">
+          <p class="text-center m-0 py-3 opacity-50">
+            Copyright &copy; by
+            <a
+              class="text-decoration-none footer-author"
+              href="https://josephines1.github.io/"
+              target="_blank"
+            >
+              Josephine
+            </a>
+            2024. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>
