@@ -156,7 +156,7 @@ li.nav-item:hover a.nav-link::after {
   border-radius: 1em;
   color: var(--light);
   padding-block: 3em;
-  box-shadow: 5px 5px 10px 2px var(--accent-light);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   text-shadow: 0px 0px 0px 10px #000;
 }
 
